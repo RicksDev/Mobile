@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top:10%;
+    padding: 120px;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.199);
+    height: 500px;
+    width: 500px;
+
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.form-control {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-button {
+    margin-top: 40px;
+}
+button {
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-button:hover {
+
+}
