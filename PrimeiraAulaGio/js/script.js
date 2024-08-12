@@ -17,6 +17,7 @@ button.addEventListener("click", (e) => {
 
     console.log(`Parabéns, você ${inputName} está cadastrado!`);
     const templateHTML = `<li>${inputName}, tem ${inputIdade} anos e seu número é: ${inputTelefone} </li>`;
+    
     const lista = document.querySelector(".lista");
     
     // Condição
