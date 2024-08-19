@@ -3,9 +3,9 @@ import imagem from "../../public/img/Jetta.jpg";
 const Banner = () => {
   return (
     <>
-        <div className="titulo">
+        {/* <div className="titulo">
             Jetta GLI
-        </div>
+        </div> */}
     <div className="container">
       <div className="container-img">
         <img className="imgPrincipal" src={imagem} alt="" />

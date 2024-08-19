@@ -1,0 +1,32 @@
+.new-container {
+    background-color: gray;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid black;
+    align-items: center;
+    margin-bottom: 60px;
+    box-shadow: rgb(9, 9, 9) 0px 20px 30px -10px;
+}   
+.teste{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-txt {
+    width: 30%;
+    height: 250px;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.img-content {
+    display: flex;
+    height: 250px;
+    width: 450px;
+
+}
