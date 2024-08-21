@@ -60,13 +60,20 @@ class Dashboard extends StatelessWidget {
                   padding: const EdgeInsets.all(20.0),
                   child: Row(
                     children: [
-                      
                       Text(
                         'Go to Checkout',
                         style: TextStyle(fontSize: 19),
                       ),
                       Spacer(),
-                      Text('TOTAL = \$***')
+                      Container(
+                          width: 120,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                              color: const Color.fromARGB(255, 3, 41, 5)),
+                          child: Text(
+                            'TOTAL = \$***',
+                            style: TextStyle(color: Colors.white),
+                          ))
                     ],
                   ),
                 )),
