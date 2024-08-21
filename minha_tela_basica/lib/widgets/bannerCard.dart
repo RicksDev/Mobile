@@ -28,7 +28,7 @@ class bannerCard extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                'Banana Prata',
+                'Abacaxi',
                 style: TextStyle(
                   fontSize: 20,
                 ),
@@ -37,7 +37,7 @@ class bannerCard extends StatelessWidget {
                 height: 12,
               ),
               Text(
-                '1 Kg de banana',
+                '1 unidade de Abacaxi',
                 style: TextStyle(fontSize: 12),
               ),
               SizedBox(
