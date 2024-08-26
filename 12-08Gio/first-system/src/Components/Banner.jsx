@@ -15,7 +15,7 @@ const Banner = () => {
         praticidade, destacando-se na linha da Volkswagen por seu desempenho e
         sofisticação. O Jetta GLi é frequentemente descrito como a versão mais
         esportiva do Jetta, oferecendo uma experiência de condução envolvente e
-        dinâmica. Equipado com um motor turboalimentado de 2.0 litros, o GLi
+        dinâmica. Equipado com um motor turboa limentado de 2.0 litros, o GLi
         entrega uma potência considerável, que se traduz em uma aceleração
         rápida e uma resposta ágil. A transmissão automática de dupla embreagem
         de 7 marchas, conhecida como DSG, contribui para uma troca de marchas
