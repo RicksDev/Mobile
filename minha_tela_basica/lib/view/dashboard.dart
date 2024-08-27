@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minha_tela_basica/widgets/bannerCard.dart';
+import 'package:minha_tela_basica/widgets/botaoBaixo.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key, required String title});
@@ -10,6 +11,9 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Tela do Ricks'),
@@ -19,8 +23,8 @@ class Dashboard extends StatelessWidget {
         child: Column(
           children: [
             Container(
-                height: 100,
-                width: 500,
+                height: size.height,
+                width: size.width,
                 child: TextField(
                   decoration: InputDecoration(
                     enabledBorder: inputBorder,
@@ -33,53 +37,32 @@ class Dashboard extends StatelessWidget {
                     filled: true,
                   ),
                 )),
-            bannerCard(),
+            GestureDetector(
+              onTap: () {
+                print('Cliquei!!');
+              },
+              child: bannerCard()),
             SizedBox(
-              height: 20,
+              height: size.height,
             ),
             bannerCard(),
             SizedBox(
-              height: 20,
+              height: size.height,
             ),
             bannerCard(),
             SizedBox(
-              height: 20,
+              height: size.height,
             ),
             bannerCard(),
             SizedBox(
-              height: 100,
+              height: size.height,
             ),
-            Container(
-                height: 60,
-                width: 600,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.green,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Row(
-                    children: [
-                      Text(
-                        'Go to Checkout',
-                        style: TextStyle(fontSize: 19),
-                      ),
-                      Spacer(),
-                      Container(
-                          width: 120,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                              color: const Color.fromARGB(255, 3, 41, 5)),
-                          child: Text(
-                            'TOTAL = \$***',
-                            style: TextStyle(color: Colors.white),
-                          ))
-                    ],
-                  ),
-                )),
+            BotaoBaixo(),
           ],
         ),
       ),
     );
   }
 }
+
+

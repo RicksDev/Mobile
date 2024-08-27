@@ -53,7 +53,11 @@ class bannerCard extends StatelessWidget {
                   SizedBox(
                     width: 12,
                   ),
-                  Icon(Icons.add_circle_outline),
+                  GestureDetector(
+                    onTap: () {
+                      print('Adicionado');
+                    },
+                    child: Icon(Icons.add_circle_outline)),
                 ],
               )
             ],
