@@ -2,8 +2,8 @@ import "./css/form.css";
 import { useState } from "react";
 
 const Form = () => {
-    
-
+  
+  //Estado inicial dos dados inseridos
   const initialForm = {
     nome: "",
     email: "",
@@ -19,20 +19,29 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // Verifica se todos os campos estão preenchidos
     const form = event.target;
-    const nome = form.name.value;
+    const nome = form.nome.value;
     const email = form.email.value;
     const cpf = form.cpf.value;
 
-    const data = { name: nome, email: email, cpf: cpf}
-    
-    console.log('Dados:', data);
+    //enviar os dados, se os campos forem preenchidos, vai seguir o bloco de if
+    if (nome && email && cpf) {
+      window.alert('Seus dados foram enviados ao console! De uma olhada ai!!')
 
-    // console.log(formState.nome);
-    // console.log(formState.email);
-    // console.log(formState.cpf);
+     
+      const data = {
+        nome: nome,
+        email: email,
+        cpf: cpf,
+      };
 
-    // Para limpar o campo após a inserção dos dados
+      console.log("Seus dados: ", data);
+      // Aqui posso adicionar a lógica para enviar os dados
+    } else {
+      window.alert("Por favor, preencha todos os campos corretamente!");
+    }
     setFormState(initialForm);
   };
 
@@ -40,43 +49,45 @@ const Form = () => {
     <>
       <div className="container-form">
         <div className="form">
-          <form className="formulario" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Nome:</label>
-              <input
-                type="text"
-                id="name"
-                name="name" // Atualizado para corresponder à chave no estado
-                placeholder="  Nome:"
-                value={formState.nome}
-                onChange={handleInput}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">E-mail:</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="  E-mail"
-                value={formState.email}
-                onChange={handleInput}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="cpf">CPF:</label>
-              <input
-                type="text"
-                id="cpf"
-                name="cpf"
-                placeholder="  CPF"
-                value={formState.cpf}
-                onChange={handleInput}
-              />
-            </div>
+          <section id="form">
+            <form className="formulario" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="nome">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome" 
+                  placeholder="  Giovanni ..."
+                  value={formState.nome}
+                  onChange={handleInput}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">E-mail:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="  Giovanni@gmail.com"
+                  value={formState.email}
+                  onChange={handleInput}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="cpf">CPF:</label>
+                <input
+                  type="text"
+                  id="cpf"
+                  name="cpf"
+                  placeholder="  999.999.999-99"
+                  value={formState.cpf}
+                  onChange={handleInput}
+                />
+              </div>
 
-            <button className="btn-main">Enviar</button>
-          </form>
+              <button className="btn-main">Enviar</button>
+            </form>
+          </section>
         </div>
 
         <div className="txt-main">

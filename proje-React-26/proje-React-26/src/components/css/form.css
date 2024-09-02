@@ -1,14 +1,19 @@
 .container-form {
     background-color: gray;
     width: 80%;
-    height: 450px;
+    height: 420px;
     margin: auto;
     display: flex;
     align-items: center;
     border-radius: 5px;
-    border: 2px solid black;
-    position: relative; 
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 100px; 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 .form {
     width: 100%;
@@ -53,7 +58,7 @@ input {
     cursor: pointer;
     background-color: white;
     color: red;
-    transition: all ease 0.6s;
+    transition: all ease 0.7s;
 }
 .txt-main {
     position: relative;

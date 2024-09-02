@@ -12,7 +12,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom:2px solid white ;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 .img-header {
     height: 70px;
     width: 120px ;

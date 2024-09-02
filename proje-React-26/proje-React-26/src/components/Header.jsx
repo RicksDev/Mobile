@@ -1,4 +1,4 @@
-import Logo from "../../public/img/Logo.png";
+import Logo from "/img/Logo.png";
 import "./css/header.css";
 
 
@@ -12,8 +12,7 @@ const Header = () => {
         <div className="text-header">
             <ul>
                 <li>Início</li>
-                <li>Sobre nós</li>
-                <li>Carros</li>
+                <li>Sobre o carro</li>
                 <li>Contato</li>
             </ul>
         </div>

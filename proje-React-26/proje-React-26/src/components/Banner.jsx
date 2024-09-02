@@ -1,4 +1,4 @@
-import ImagemJ from "../../public/img/Jetta.jpg";
+import ImagemJ from "/img/Jetta.jpg";
 import "./css/banner.css"
 
 const Main = () => {

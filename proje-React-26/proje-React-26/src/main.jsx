@@ -5,6 +5,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* Tudo que irá aparecer na tela, estará no APp.jsx */}
     <App />
   </StrictMode>,
 )
